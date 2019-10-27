@@ -3,24 +3,20 @@ import React, { useState } from 'react';
 import Footer from '../static/Footer';
 import Header from '../static/Header';
 import Home from '../pages/Home'
-
+import './style.scss'
 
 function App() {
-  const [value, setValue] = useState('');
-  const changeInput = (event) => {
-    setValue(event.target.value);
-  }
+  console.log('render App');
 
  return (
-    <div id="app">
+    <div className="app">
       <Header/>
-      <main>
-        <input onChange={changeInput} />
+      <main className="page">
+        
         <Home 
-        title={value}
-        numberPage='5'
+      
         />
-        <p>{value}</p>
+        
       </main>
       <Footer/>
     </div>

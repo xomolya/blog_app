@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 const Home = (props) => {
-    const {title, numberPage} = props;
+ 
     return (
+
         <div className='Home'>
-            <h1>{title}</h1>
-            <h2>{numberPage}</h2>
+            <h1>Home</h1>
         </div>
     )
 }
