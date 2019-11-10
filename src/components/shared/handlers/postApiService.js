@@ -7,3 +7,13 @@ export function getPosts() {
         return response.json()
     });
 }
+
+
+
+export function getLastPosts(limit) {
+    return fetch(`${BASE_URL}/posts/last/${limit}`)
+        .then(response => {
+            return response.json()
+        });
+}
+

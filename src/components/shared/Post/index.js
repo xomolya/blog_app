@@ -7,7 +7,7 @@ const Post = props => {
         data_update, 
         likes, 
         description,
-        user: { name }
+       // user: { name }
      } = props.post;
     console.log(props.post)
 
