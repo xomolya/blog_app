@@ -9,6 +9,13 @@ export function getPosts() {
 }
 
 
+export function getPost(id) {
+    return fetch(`${BASE_URL}/posts/${id}`)
+        .then(response => {
+            return response.json()
+        });
+}
+
 
 export function getLastPosts(limit) {
     return fetch(`${BASE_URL}/posts/last/${limit}`)
